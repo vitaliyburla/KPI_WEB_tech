@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+.text1 {
+    background: red;
+    width: 100%;
+    height: 20%;
+}
+.image1 {
+    background: paleturquoise;
+    width: 75%;
+    height: 50%;
+    float: left;
+}
+.text2 {
+    background: green;
+    width: 25%;
+    height: 50%;
+    float: right;
+}
+.image2 {
+    background: yellow;
+    width: 100%;
+    height: 30%;
+    float: left;
+}
+
+.container_flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner_container_flex {
+    display: flex;
+    flex: 5;
+}
+
+.text1_flex {
+    background: red;
+    flex: 2;
+}
+.image1_flex {
+    background: paleturquoise;
+    flex: 3;
+}
+.text2_flex {
+    background: green;
+    flex: 1;
+}
+.image2_flex {
+    background: yellow;
+    flex: 3;
+}

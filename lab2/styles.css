@@ -1,0 +1,13 @@
+.image_container {
+    position: relative;
+}
+
+.first_picture {
+    transform: translateX(100%);
+}
+
+.second_picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
