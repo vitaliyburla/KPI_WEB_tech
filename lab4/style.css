@@ -1,0 +1,19 @@
+.button {
+    width: 150px;
+    height: 50px;
+}
+
+#buttonContainer {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#imageContainer {
+    height: 350px;
+    overflow: hidden;
+}
+
+#image {
+    height: 300px;
+}
