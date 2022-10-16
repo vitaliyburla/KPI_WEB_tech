@@ -1,0 +1,36 @@
+.form-field {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+#form {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#task1,
+#task2 {
+    flex: 1;
+}
+
+table,
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+#color-input {
+    margin: 1rem 0;
+}
