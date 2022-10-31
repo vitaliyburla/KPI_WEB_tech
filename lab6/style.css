@@ -1,0 +1,35 @@
+#users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 680px;
+    margin-top: 3rem;
+}
+
+#fetchButton {
+    padding: 1rem 4rem;
+    background: lightsalmon;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.user {
+    display: inline-flex;
+    flex-direction: column;
+    width: calc((100% - 2rem) / 3);
+    background-color: brown;
+    color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.info {
+    padding: 0.5rem;
+}
+
+.info p {
+    overflow-wrap: break-word;
+}
