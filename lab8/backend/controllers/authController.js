@@ -8,10 +8,7 @@ class AuthController {
         try {
             const { username, password } = req.body;
             const accessToken = this.service.signIn(username, password);
-            return res
-                .cookie('accessToken', accessToken)
-                .status(200)
-                .send('Successfully signed in');
+            return res.json({ accessToken });
         } catch (err) {
             return res.status(500).json({ error: err.message });
         }
@@ -23,9 +20,6 @@ class AuthController {
         } catch (err) {
             return res.status(500).json({ error: err.message });
         }
-    };
-    signOut = (req, res) => {
-        return res.clearCookie('accessToken').end();
     };
 }
 
