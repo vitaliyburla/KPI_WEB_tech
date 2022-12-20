@@ -6,7 +6,7 @@ const instance = axios.create({
 
 export const getUser = async () => {
     try {
-        const response = await instance.get('/', {
+        const response = await instance.get('/user', {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
             },
@@ -18,7 +18,7 @@ export const getUser = async () => {
             if (err.response?.status === 401) {
                 localStorage.removeItem('accessToken');
             }
-            return { error };
+            return { error: error };
         }
         return { error: 'Something went wrong, please try again' };
     }

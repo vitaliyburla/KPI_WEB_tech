@@ -1,11 +1,11 @@
 [
     {
-        "id": "ded39003-5f8d-459c-a764-afa8c0be73df",
-        "username": "someusername",
-        "password": "$2b$05$d3qfLBMU373V5ftYKRlvu.4Mb1nOvR5.xjwHDYQ.OkMG87d/MpoaW",
-        "name": "somename",
+        "id": "3074dcf9-0e1b-4efb-bb30-178ecfd3df07",
+        "username": "vitaliiburla",
+        "password": "$2b$05$GeCfgs1s1TR2qS6/8yYDkuk.OHS0zgaoRm5F9REWcS2ufXhFNp5Bq",
+        "name": "Vitalii Burla",
         "group": "IT-91",
-        "variant": 4,
-        "phone": "somephone"
+        "variant": 11,
+        "phone": "123-123-12-12"
     }
 ]

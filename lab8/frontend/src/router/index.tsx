@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Auth from '../pages/Auth';
 import Root from '../pages/Root';
-import SignUp from '../pages/Auth/SignUp';
-import SignIn from '../pages/Auth/SignIn';
+import Sign from '../pages/Auth/Form';
+import { signInForm, signUpForm } from '../pages/Auth/forms';
 
 const router = createBrowserRouter([
     {
@@ -15,11 +15,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: 'signup',
-                element: <SignUp />,
+                element: <Sign form={signUpForm} />,
             },
             {
                 path: 'signin',
-                element: <SignIn />,
+                element: <Sign form={signInForm} />,
             },
         ],
     },

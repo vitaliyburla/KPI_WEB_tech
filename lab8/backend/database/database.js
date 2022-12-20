@@ -14,6 +14,10 @@ class Database {
         const users = this.getUsers();
         return users.find((u) => u.username === username);
     };
+    getUserById = (id) => {
+        const users = this.getUsers();
+        return users.find((u) => u.id === id);
+    };
     removeUser = (id) => {
         const users = this.getUsers();
         fs.writeFileSync(

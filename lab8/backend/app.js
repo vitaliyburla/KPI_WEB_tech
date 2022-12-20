@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const authRouter = require('./routes/authRouter');
+const userRouter = require('./routes/userRouter');
 const cookieParser = require('cookie-parser');
 const authChecker = require('./middlewares/auth');
 const app = express();
@@ -13,11 +14,7 @@ require('dotenv').config();
 
 app.use(authChecker);
 app.use('/auth', authRouter);
-
-app.get('/', (req, res) => {
-    res.status(200);
-    res.send('Welcome to root URL of Server');
-});
+app.use('/user', userRouter);
 
 app.listen(PORT, (error) => {
     if (!error)

@@ -19,7 +19,7 @@ class AuthService {
             { id: user.id, username: user.username },
             process.env.JWT_SECRET,
             {
-                expiresIn: '20s',
+                expiresIn: '30m',
             }
         );
 
@@ -32,7 +32,7 @@ class AuthService {
             data.password,
             data.name,
             data.group,
-            data.variant,
+            +data.variant,
             data.phone
         );
         if (Object.values(user).some((x) => x === undefined))
